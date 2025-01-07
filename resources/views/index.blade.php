@@ -8,11 +8,8 @@
 @push('scripts')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
     <script>
-       // Get the data passed from the controller
-        let cities = @json($cities); // Cities data in JSON format
-
+        let cities = @json($cities);
         if (cities.length) {
-            // Extract labels (city names) and data (temperatures)
             let labels = cities.map(function(city) {
                 return city.name; // City name
             });
@@ -24,7 +21,7 @@
             // Create the chart
             let ctx = document.getElementById('temperatureChart').getContext('2d');
             let temperatureChart = new Chart(ctx, {
-                type: 'line', // Line chart type
+                type: 'line', 
                 data: {
                     labels: labels, // City names on the x-axis
                     datasets: [{
@@ -51,7 +48,7 @@
                                 text: 'Temperature (°C)'
                             },
                             ticks: {
-                                stepSize: 5 // Adjust step size for better readability
+                                stepSize: 5
                             }
                         }
                     }
