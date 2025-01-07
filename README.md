@@ -46,6 +46,8 @@ Displays temperature data in a responsive line chart using Chart.js.
 
             php artisan fetch:temperature-mohali
 
+![test command on local](https://i.ibb.co/YdrQYMj/Screenshot-10.png)
+
 - Set Up Task Scheduling
     - To enable automatic hourly fetching of temperature data, the following schedule is called in routes/console.php (previously before 11th version this was use to add in app/Console/Kernel.php):
 
@@ -68,6 +70,7 @@ For Frequency Options (like hourly or others): we can check on https://laravel.c
        /** This will run the schedular
        php artisan schedule:list
 
+![scheduler on local](https://i.ibb.co/LDK4hF4/Screenshot-9.png)
 
 - Serve the Application
          
