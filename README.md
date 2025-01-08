@@ -76,3 +76,4 @@ For Frequency Options (like hourly or others): we can check on https://laravel.c
          
         php artisan serve
 
+![After serving on local](https://i.ibb.co/GCSWHbJ/Screenshot-11.png)
